@@ -37,7 +37,7 @@
         android:required="false" />
 
     <application
-        android:name="com.kiss.KissApplication"
+        android:name=".kiss.KissApplication"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:hardwareAccelerated="true"
@@ -55,7 +55,7 @@
         stateNotNeeded: rebuild the whole UI each time onResume() is called
         -->
         <activity
-            android:name="com.kiss.MainActivity"
+            android:name=".kiss.MainActivity"
             android:clearTaskOnLaunch="true"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -84,7 +84,7 @@
                 android:resource="@drawable/ic_launcher" />
         </activity>
         <activity
-            android:name="com.kiss.DummyActivity"
+            android:name=".kiss.DummyActivity"
             android:enabled="false"
             android:exported="true">
             <intent-filter>
@@ -95,42 +95,42 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.kiss.SettingsActivity"
+            android:name=".kiss.SettingsActivity"
             android:exported="true"
             android:label="@string/activity_setting"
-            android:parentActivityName="com.kiss.MainActivity"
+            android:parentActivityName=".kiss.MainActivity"
             android:theme="@style/SettingTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.kiss.MainActivity" />
+                android:value=".kiss.MainActivity" />
             <intent-filter>
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.kiss.PickAppWidgetActivity"
+            android:name=".kiss.PickAppWidgetActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:parentActivityName="com.kiss.MainActivity"
+            android:parentActivityName=".kiss.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SettingTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.kiss.MainActivity" />
+                android:value=".kiss.MainActivity" />
         </activity>
         <activity
-            android:name="com.kiss.kustomsupport.AutoFinishTransparentActivity"
+            android:name=".kiss.kustomsupport.AutoFinishTransparentActivity"
             android:theme="@style/Theme.Transparent" />
 
         <provider
-            android:name="com.kiss.kustomsupport.Kustom5SecsProvider"
+            android:name=".kiss.kustomsupport.Kustom5SecsProvider"
             android:authorities="${applicationId}.kustomsupport.kustom5secsprovider"
             android:exported="true"
             android:grantUriPermissions="true" />
 
         <receiver
-            android:name="com.kiss.broadcast.LocaleChangedReceiver"
+            android:name=".kiss.broadcast.LocaleChangedReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -140,7 +140,7 @@
 
         <!-- On incoming calls, add user to history -->
         <receiver
-            android:name="com.kiss.broadcast.IncomingCallHandler"
+            android:name=".kiss.broadcast.IncomingCallHandler"
             android:enabled="false"
             android:exported="true">
             <intent-filter>
@@ -149,7 +149,7 @@
         </receiver>
 
         <service
-            android:name="com.kiss.broadcast.IncomingCallScreeningService"
+            android:name=".kiss.broadcast.IncomingCallScreeningService"
             android:exported="true"
             android:permission="android.permission.BIND_SCREENING_SERVICE">
             <intent-filter>
@@ -158,12 +158,12 @@
         </service>
 
 
-        <service android:name="com.kiss.dataprovider.AppProvider" />
-        <service android:name="com.kiss.dataprovider.ContactsProvider" />
-        <service android:name="com.kiss.dataprovider.ShortcutsProvider" />
+        <service android:name=".kiss.dataprovider.AppProvider" />
+        <service android:name=".kiss.dataprovider.ContactsProvider" />
+        <service android:name=".kiss.dataprovider.ShortcutsProvider" />
 
         <service
-            android:name="com.kiss.notification.NotificationListener"
+            android:name=".kiss.notification.NotificationListener"
             android:enabled="@bool/notification_service_enabled"
             android:exported="true"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
@@ -173,7 +173,7 @@
         </service>
 
         <service
-            android:name="com.kiss.utils.LockAccessibilityService"
+            android:name=".kiss.utils.LockAccessibilityService"
             android:exported="true"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>

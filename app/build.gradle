@@ -16,7 +16,7 @@ android {
     compileSdkVersion 33
     defaultConfig {
         applicationId 'com.roy93group.kiss'
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 33
         versionCode 20230127
         versionName "2023.01.27"
