@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.colorpicker;
+package com.lib.colorpicker;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

@@ -12,9 +12,9 @@ import android.widget.Button;
 
 import androidx.annotation.ColorInt;
 
-import com.android.colorpicker.ColorPickerDialog;
-import com.android.colorpicker.ColorPickerPalette;
-import com.android.colorpicker.ColorPickerSwatch.OnColorSelectedListener;
+import com.lib.colorpicker.ColorPickerDialog;
+import com.lib.colorpicker.ColorPickerPalette;
+import com.lib.colorpicker.ColorPickerSwatch.OnColorSelectedListener;
 
 import fr.neamar.kiss.R;
 import fr.neamar.kiss.UIColors;

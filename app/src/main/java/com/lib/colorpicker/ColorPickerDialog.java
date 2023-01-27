@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.colorpicker;
+package com.lib.colorpicker;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -24,7 +24,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import com.android.colorpicker.ColorPickerSwatch.OnColorSelectedListener;
+import com.lib.colorpicker.ColorPickerSwatch.OnColorSelectedListener;
 
 import fr.neamar.kiss.R;
 

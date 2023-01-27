@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.android.colorpicker.ColorPickerPalette
+        <com.lib.colorpicker.ColorPickerPalette
             android:id="@+id/colorPicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
