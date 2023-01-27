@@ -6,19 +6,11 @@
         android:name="com.android.launcher.permission.INSTALL_SHORTCUT"
         android:protectionLevel="normal" />
 
-    <!-- Self explanatory -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <!-- To call a phone number directly without displaying the dialer -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <!-- To read phone state -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <!-- Display notification drawer -->
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
-    <!-- Ability to uninstall an app from KISS -->
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
-    <!-- Android 11 now makes listing apps a non-default permission
-    https://developer.android.com/training/basics/intents/package-visibility
-    -->
     <uses-permission
         android:name="android.permission.QUERY_ALL_PACKAGES"
         tools:ignore="QueryAllPackagesPermission" />
@@ -126,7 +118,7 @@
         <provider
             android:name=".kiss.kustomsupport.Kustom5SecsProvider"
             android:authorities="${applicationId}.kustomsupport.kustom5secsprovider"
-            android:exported="true"
+            android:exported="false"
             android:grantUriPermissions="true" />
 
         <receiver
