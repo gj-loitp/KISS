@@ -17,9 +17,8 @@ import java.util.Collections;
 
 import androidx.annotation.NonNull;
 
+import com.R;
 import com.kiss.adapter.RecordAdapter;
-
-import fr.neamar.kiss.R;
 
 import com.kiss.pojo.PhonePojo;
 import com.kiss.ui.ListPopup;

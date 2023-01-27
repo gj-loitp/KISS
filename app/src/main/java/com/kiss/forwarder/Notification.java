@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.R;
 import com.kiss.MainActivity;
-import fr.neamar.kiss.R;
 import com.kiss.notification.NotificationListener;
 
 import static android.content.Context.MODE_PRIVATE;

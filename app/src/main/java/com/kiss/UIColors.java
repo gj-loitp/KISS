@@ -11,7 +11,7 @@ import android.preference.PreferenceManager;
 import android.view.Window;
 import android.view.WindowManager;
 
-import fr.neamar.kiss.R;
+import com.R;
 
 public class UIColors {
     public static final int COLOR_DEFAULT = 0xFF4CAF50;
@@ -81,7 +81,7 @@ public class UIColors {
         for (int i = 0; i < COLOR_LIST.length; i++) {
             if (COLOR_LIST[i] == primaryColor) {
                 int resId = OVERLAY_LIST[i];
-                if(resId != -1) {
+                if (resId != -1) {
                     activity.getTheme().applyStyle(resId, true);
                 }
                 break;

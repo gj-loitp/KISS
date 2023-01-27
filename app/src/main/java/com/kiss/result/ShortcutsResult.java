@@ -26,6 +26,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 
+import com.R;
 import com.kiss.KissApplication;
 import com.kiss.adapter.RecordAdapter;
 
@@ -34,8 +35,6 @@ import java.util.Locale;
 
 import com.kiss.DataHandler;
 import com.kiss.IconsHandler;
-
-import fr.neamar.kiss.R;
 
 import com.kiss.pojo.ShortcutPojo;
 import com.kiss.ui.ListPopup;

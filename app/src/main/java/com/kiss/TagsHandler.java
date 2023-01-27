@@ -10,6 +10,7 @@ import android.provider.AlarmClock;
 
 import androidx.annotation.NonNull;
 
+import com.R;
 import com.kiss.db.DBHelper;
 
 import java.util.ArrayList;
@@ -19,8 +20,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-
-import fr.neamar.kiss.R;
 
 public class TagsHandler {
     private final Context context;

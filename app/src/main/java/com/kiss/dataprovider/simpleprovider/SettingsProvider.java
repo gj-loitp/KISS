@@ -10,6 +10,7 @@ import android.provider.Settings;
 
 import androidx.annotation.DrawableRes;
 
+import com.R;
 import com.kiss.normalizer.StringNormalizer;
 import com.kiss.pojo.Pojo;
 import com.kiss.pojo.SettingPojo;
@@ -19,8 +20,6 @@ import com.kiss.utils.FuzzyScore;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-
-import fr.neamar.kiss.R;
 
 public class SettingsProvider extends SimpleProvider {
     private final static String SCHEME = "setting://";

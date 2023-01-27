@@ -7,8 +7,7 @@ import android.content.DialogInterface.OnClickListener;
 import android.preference.SwitchPreference;
 import android.util.AttributeSet;
 
-import fr.neamar.kiss.R;
-
+import com.R;
 
 public class FreezeHistorySwitch extends SwitchPreference {
 

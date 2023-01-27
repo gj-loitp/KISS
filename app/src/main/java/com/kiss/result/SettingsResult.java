@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import fr.neamar.kiss.R;
+import com.R;
 import com.kiss.pojo.SettingPojo;
 import com.kiss.utils.FuzzyScore;
 

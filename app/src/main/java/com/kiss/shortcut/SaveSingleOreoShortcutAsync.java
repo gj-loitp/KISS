@@ -12,13 +12,12 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 
+import com.R;
 import com.kiss.KissApplication;
 
 import java.lang.ref.WeakReference;
 
 import com.kiss.DataHandler;
-
-import fr.neamar.kiss.R;
 
 @RequiresApi(Build.VERSION_CODES.O)
 public class SaveSingleOreoShortcutAsync extends AsyncTask<Void, Integer, Boolean> {

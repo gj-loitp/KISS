@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.R;
 import com.kiss.adapter.RecordAdapter;
 import com.kiss.searcher.QueryInterface;
 
@@ -27,7 +28,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-import fr.neamar.kiss.R;
 import com.kiss.UIColors;
 import com.kiss.pojo.ContactsPojo;
 import com.kiss.ui.ImprovedQuickContactBadge;

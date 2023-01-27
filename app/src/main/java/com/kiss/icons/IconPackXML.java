@@ -22,6 +22,7 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.R;
 import com.kiss.utils.DrawableUtils;
 import com.kiss.utils.UserHandle;
 
@@ -39,8 +40,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Random;
-
-import fr.neamar.kiss.R;
 
 public class IconPackXML implements IconPack<IconPackXML.DrawableInfo> {
     private final static String TAG = IconPackXML.class.getSimpleName();

@@ -12,14 +12,13 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 
+import com.R;
 import com.kiss.KissApplication;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
 
 import com.kiss.DataHandler;
-
-import fr.neamar.kiss.R;
 import com.kiss.utils.ShortcutUtil;
 
 @RequiresApi(Build.VERSION_CODES.O)

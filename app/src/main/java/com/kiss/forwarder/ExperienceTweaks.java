@@ -20,13 +20,13 @@ import android.view.View;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.ImageView;
 
+import com.R;
 import com.kiss.KissApplication;
 import com.kiss.MainActivity;
 
 import java.lang.reflect.Method;
 import java.util.List;
 
-import fr.neamar.kiss.R;
 import com.kiss.pojo.Pojo;
 import com.kiss.result.Result;
 import com.kiss.searcher.HistorySearcher;
@@ -81,11 +81,10 @@ class ExperienceTweaks extends Forwarder {
             @Override
             public boolean onSingleTapUp(MotionEvent e) {
                 // Double tap disabled: display history directly
-                if(!prefs.getBoolean("double-tap", false)) {
+                if (!prefs.getBoolean("double-tap", false)) {
                     if (prefs.getBoolean("history-onclick", false)) {
                         doAction("single-tap", "display-history");
-                    }
-                    else if(isMinimalisticModeEnabledForFavorites()) {
+                    } else if (isMinimalisticModeEnabledForFavorites()) {
                         doAction("single-tap", "display-favorites");
                     }
                 }
@@ -95,11 +94,10 @@ class ExperienceTweaks extends Forwarder {
             @Override
             public boolean onSingleTapConfirmed(MotionEvent e) {
                 // Double tap enabled: wait to confirm this is indeed a single tap, not a double tap
-                if(prefs.getBoolean("double-tap", false)) {
+                if (prefs.getBoolean("double-tap", false)) {
                     if (prefs.getBoolean("history-onclick", false)) {
                         doAction("single-tap", "display-history");
-                    }
-                    else if(isMinimalisticModeEnabledForFavorites()) {
+                    } else if (isMinimalisticModeEnabledForFavorites()) {
                         doAction("single-tap", "display-favorites");
                     }
                 }
@@ -119,7 +117,7 @@ class ExperienceTweaks extends Forwarder {
                 if (Build.VERSION.SDK_INT < Build.VERSION_CODES.P) {
                     return super.onDoubleTap(e);
                 }
-                if(!prefs.getBoolean("double-tap", false)) {
+                if (!prefs.getBoolean("double-tap", false)) {
                     return super.onDoubleTap(e);
                 }
 

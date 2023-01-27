@@ -17,6 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
+import com.R;
 import com.kiss.KissApplication;
 import com.kiss.MainActivity;
 
@@ -25,7 +26,6 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-import fr.neamar.kiss.R;
 import com.kiss.TagsHandler;
 import com.kiss.dataprovider.simpleprovider.TagsProvider;
 import com.kiss.ui.ListPopup;
@@ -54,14 +54,13 @@ public class TagsMenu extends Forwarder {
         return prefs.getBoolean("pref-tags-menu", false);
     }
 
-    public boolean isAutoDismiss()
-    {
+    public boolean isAutoDismiss() {
         return prefs.getBoolean("pref-tags-menu-dismiss", false);
     }
 
     private void loadTags() {
         if (isTagMenuEnabled())
-        	setTags(getPrefTags(prefs, mainActivity));
+            setTags(getPrefTags(prefs, mainActivity));
         else
             setTags(null);
     }
@@ -251,7 +250,7 @@ public class TagsMenu extends Forwarder {
 
         // set popup interaction rules
         popupMenu.setAdapter(adapter);
-        popupMenu.setDismissOnItemClick( isAutoDismiss() );
+        popupMenu.setDismissOnItemClick(isAutoDismiss());
         popupMenu.setOnItemClickListener(new ListPopup.OnItemClickListener() {
             @Override
             public void onItemClick(ListAdapter adapter, View view, int position) {

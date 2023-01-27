@@ -7,7 +7,7 @@ import android.preference.DialogPreference;
 import android.util.AttributeSet;
 import android.widget.Toast;
 
-import fr.neamar.kiss.R;
+import com.R;
 import com.kiss.utils.ShortcutUtil;
 
 public class ResetShortcutsPreference extends DialogPreference {

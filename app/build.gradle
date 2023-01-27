@@ -36,7 +36,7 @@ android {
         sourceCompatibility = '1.8'
         targetCompatibility = '1.8'
     }
-    namespace 'fr.neamar.kiss'
+    namespace 'com'
 }
 
 dependencies {

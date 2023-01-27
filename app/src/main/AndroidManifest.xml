@@ -19,7 +19,8 @@
     <!-- Android 11 now makes listing apps a non-default permission
     https://developer.android.com/training/basics/intents/package-visibility
     -->
-    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
         tools:ignore="QueryAllPackagesPermission" />
 
     <uses-feature
@@ -38,14 +39,14 @@
     <application
         android:name="com.kiss.KissApplication"
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppThemeLight"
-        tools:ignore="GoogleAppIndexingWarning"
-        android:resizeableActivity="true"
         android:localeConfig="@xml/locales_config"
-        android:fullBackupContent="@xml/backup_descriptor">
+        android:resizeableActivity="true"
+        android:theme="@style/AppThemeLight"
+        tools:ignore="GoogleAppIndexingWarning">
 
         <!--
         clearTaskOnLaunch: when viewing kiss settings, display the main activity when pressing home https://github.com/Neamar/KISS/issues/117
@@ -57,8 +58,8 @@
             android:name="com.kiss.MainActivity"
             android:clearTaskOnLaunch="true"
             android:excludeFromRecents="true"
-            android:label="@string/app_name"
             android:exported="true"
+            android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="user"
             android:stateNotNeeded="true"
@@ -77,14 +78,15 @@
             <intent-filter>
                 <action android:name="android.content.pm.action.CONFIRM_PIN_SHORTCUT" />
             </intent-filter>
+
             <meta-data
                 android:name="com.android.systemui.action_assist_icon"
                 android:resource="@drawable/ic_launcher" />
         </activity>
         <activity
             android:name="com.kiss.DummyActivity"
-            android:exported="true"
-            android:enabled="false">
+            android:enabled="false"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -94,10 +96,10 @@
         </activity>
         <activity
             android:name="com.kiss.SettingsActivity"
-            android:label="@string/activity_setting"
             android:exported="true"
-            android:theme="@style/SettingTheme"
-            android:parentActivityName="com.kiss.MainActivity">
+            android:label="@string/activity_setting"
+            android:parentActivityName="com.kiss.MainActivity"
+            android:theme="@style/SettingTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.kiss.MainActivity" />
@@ -139,16 +141,17 @@
         <!-- On incoming calls, add user to history -->
         <receiver
             android:name="com.kiss.broadcast.IncomingCallHandler"
-            android:exported="true"
-            android:enabled="false">
+            android:enabled="false"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
         </receiver>
+
         <service
             android:name="com.kiss.broadcast.IncomingCallScreeningService"
-            android:permission="android.permission.BIND_SCREENING_SERVICE"
-            android:exported="true">
+            android:exported="true"
+            android:permission="android.permission.BIND_SCREENING_SERVICE">
             <intent-filter>
                 <action android:name="android.telecom.CallScreeningService" />
             </intent-filter>
@@ -159,7 +162,8 @@
         <service android:name="com.kiss.dataprovider.ContactsProvider" />
         <service android:name="com.kiss.dataprovider.ShortcutsProvider" />
 
-        <service android:name="com.kiss.notification.NotificationListener"
+        <service
+            android:name="com.kiss.notification.NotificationListener"
             android:enabled="@bool/notification_service_enabled"
             android:exported="true"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">

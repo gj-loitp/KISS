@@ -26,9 +26,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.R;
 import com.kiss.MainActivity;
-
-import fr.neamar.kiss.R;
 import com.kiss.pojo.TagDummyPojo;
 import com.kiss.utils.FuzzyScore;
 
@@ -44,8 +43,8 @@ public class TagDummyResult extends Result {
         boolean largeSearchBar = sharedPreferences.getBoolean("large-search-bar", false);
         int barSize = context.getResources().getDimensionPixelSize(largeSearchBar ? R.dimen.large_bar_height : R.dimen.bar_height);
 
-        if ( gBackground == null || gBackground.getIntrinsicWidth() != barSize || gBackground.getIntrinsicHeight() != barSize ) {
-            int inset = (int)(3.f * context.getResources().getDisplayMetrics().density);   // 3dp to px
+        if (gBackground == null || gBackground.getIntrinsicWidth() != barSize || gBackground.getIntrinsicHeight() != barSize) {
+            int inset = (int) (3.f * context.getResources().getDisplayMetrics().density);   // 3dp to px
             barSize -= 2 * inset;   // shrink size with the inset to keep the overall size
 
             GradientDrawable shape = new GradientDrawable();
@@ -94,10 +93,9 @@ public class TagDummyResult extends Result {
         }
         if (block == null)
             drawAsHole = false;
-        else
-        {
+        else {
             String blockString = block.toString();
-            if (    "DINGBATS".equals(blockString) ||
+            if ("DINGBATS".equals(blockString) ||
                     "EMOTICONS".equals(blockString) ||
                     "MISCELLANEOUS_SYMBOLS".equals(blockString) ||
                     "MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS".equals(blockString) ||

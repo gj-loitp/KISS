@@ -21,12 +21,12 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.R;
 import com.kiss.KissApplication;
 import com.kiss.MainActivity;
 
 import java.util.ArrayList;
 
-import fr.neamar.kiss.R;
 import com.kiss.UIColors;
 import com.kiss.db.DBHelper;
 import com.kiss.notification.NotificationListener;
@@ -185,7 +185,7 @@ public class Favorites extends Forwarder implements View.OnClickListener, View.O
     }
 
     void disposeOf(@Nullable View toBeDisposed) {
-        if(toBeDisposed == null) {
+        if (toBeDisposed == null) {
             return;
         }
         toBeDisposed.setOnClickListener(null);

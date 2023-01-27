@@ -35,6 +35,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
+import com.R;
 import com.kiss.icons.IconPack;
 import com.kiss.icons.IconPackXML;
 import com.kiss.icons.SystemIconPack;
@@ -50,8 +51,6 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import fr.neamar.kiss.R;
 
 public class CustomIconDialog extends DialogFragment {
     private final List<IconData> mIconData = new ArrayList<>();

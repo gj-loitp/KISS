@@ -6,6 +6,7 @@ import android.content.pm.ShortcutInfo;
 import android.os.Build;
 import android.widget.Toast;
 
+import com.R;
 import com.kiss.KissApplication;
 import com.kiss.loader.LoadShortcutsPojos;
 import com.kiss.normalizer.StringNormalizer;
@@ -16,8 +17,6 @@ import com.kiss.utils.FuzzyScore;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
-import fr.neamar.kiss.R;
 
 public class ShortcutsProvider extends Provider<ShortcutPojo> {
     private static boolean notifiedKissNotDefaultLauncher = false;

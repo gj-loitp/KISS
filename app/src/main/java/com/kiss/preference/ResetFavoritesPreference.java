@@ -7,8 +7,8 @@ import android.preference.PreferenceManager;
 import android.util.AttributeSet;
 import android.widget.Toast;
 
+import com.R;
 import com.kiss.KissApplication;
-import fr.neamar.kiss.R;
 
 public class ResetFavoritesPreference extends DialogPreference {
 
@@ -26,8 +26,7 @@ public class ResetFavoritesPreference extends DialogPreference {
 
             try {
                 KissApplication.getApplication(getContext()).getDataHandler().reloadApps();
-            }
-            catch(NullPointerException e) {
+            } catch (NullPointerException e) {
                 e.printStackTrace();
             }
 

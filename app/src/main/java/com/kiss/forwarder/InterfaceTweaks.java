@@ -16,11 +16,11 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.StyleableRes;
 
+import com.R;
 import com.kiss.MainActivity;
 
 import java.util.List;
 
-import fr.neamar.kiss.R;
 import com.kiss.UIColors;
 import com.kiss.utils.ViewGroupUtils;
 

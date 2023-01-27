@@ -20,7 +20,7 @@ import android.util.TypedValue;
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 
-import fr.neamar.kiss.R;
+import com.R;
 
 public class DrawableUtils {
 
@@ -129,7 +129,7 @@ public class DrawableUtils {
             Canvas iconCanvas = new Canvas(iconBitmap);
 
             // Stretch adaptive layers because they are 108dp and the icon size is 48dp
-            if(bgDrawable != null) {
+            if (bgDrawable != null) {
                 bgDrawable.setBounds(-layerOffset, -layerOffset, iconSize + layerOffset, iconSize + layerOffset);
                 bgDrawable.draw(iconCanvas);
             }

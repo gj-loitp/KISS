@@ -28,6 +28,7 @@ import android.widget.Toolbar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.R;
 import com.kiss.broadcast.IncomingCallHandler;
 import com.kiss.forwarder.TagsMenu;
 import com.kiss.pojo.AppPojo;
@@ -49,8 +50,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
-
-import fr.neamar.kiss.R;
 
 import com.kiss.dataprovider.simpleprovider.SearchProvider;
 import com.kiss.dataprovider.simpleprovider.TagsProvider;

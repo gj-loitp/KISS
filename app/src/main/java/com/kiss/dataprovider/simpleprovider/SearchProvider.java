@@ -11,6 +11,7 @@ import android.webkit.URLUtil;
 
 import androidx.annotation.Nullable;
 
+import com.R;
 import com.kiss.pojo.Pojo;
 import com.kiss.pojo.SearchPojo;
 import com.kiss.searcher.Searcher;
@@ -24,8 +25,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import fr.neamar.kiss.R;
 
 public class SearchProvider extends SimpleProvider {
     private static final String URL_REGEX = "^(?:[a-z]+://)?(?:[a-z0-9-]|[^\\x00-\\x7F])+(?:[.](?:[a-z0-9-]|[^\\x00-\\x7F])+)+.*$";

@@ -12,9 +12,8 @@ import android.widget.PopupWindow;
 
 import androidx.annotation.StringRes;
 
+import com.R;
 import com.kiss.utils.SystemUiVisibilityHelper;
-
-import fr.neamar.kiss.R;
 
 public class ListPopup extends PopupWindow {
     private final View.OnClickListener mClickListener;
@@ -39,7 +38,7 @@ public class ListPopup extends PopupWindow {
         mClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if ( dismissOnClick )
+                if (dismissOnClick)
                     dismiss();
                 if (mItemClickListener != null) {
                     LinearLayout layout = getLinearLayout();
@@ -76,7 +75,7 @@ public class ListPopup extends PopupWindow {
     @Override
     public void dismiss() {
         super.dismiss();
-        if ( mSystemUiVisibilityHelper != null )
+        if (mSystemUiVisibilityHelper != null)
             mSystemUiVisibilityHelper.popPopup();
     }
 
@@ -84,8 +83,7 @@ public class ListPopup extends PopupWindow {
         return mAdapter;
     }
 
-    public void setDismissOnItemClick(boolean dismissOnClick )
-    {
+    public void setDismissOnItemClick(boolean dismissOnClick) {
         this.dismissOnClick = dismissOnClick;
     }
 

@@ -34,6 +34,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.R;
 import com.kiss.KissApplication;
 import com.kiss.MainActivity;
 import com.kiss.adapter.RecordAdapter;
@@ -42,8 +43,6 @@ import java.util.Locale;
 
 import com.kiss.CustomIconDialog;
 import com.kiss.IconsHandler;
-
-import fr.neamar.kiss.R;
 import com.kiss.UIColors;
 import com.kiss.notification.NotificationListener;
 import com.kiss.pojo.AppPojo;

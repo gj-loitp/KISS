@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.R;
 import com.kiss.KissApplication;
 import com.kiss.adapter.RecordAdapter;
 
@@ -29,8 +30,6 @@ import java.net.URLEncoder;
 import java.util.Collections;
 
 import com.kiss.IconsHandler;
-
-import fr.neamar.kiss.R;
 
 import com.kiss.pojo.SearchPojo;
 import com.kiss.ui.ListPopup;

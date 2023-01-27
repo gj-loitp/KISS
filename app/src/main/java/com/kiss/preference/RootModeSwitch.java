@@ -7,8 +7,8 @@ import android.content.DialogInterface.OnClickListener;
 import android.preference.SwitchPreference;
 import android.util.AttributeSet;
 
+import com.R;
 import com.kiss.KissApplication;
-import fr.neamar.kiss.R;
 
 public class RootModeSwitch extends SwitchPreference {
     public RootModeSwitch(Context context) {

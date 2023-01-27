@@ -31,14 +31,14 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.annotation.StyleableRes;
 
+import com.BuildConfig;
+import com.R;
 import com.kiss.KissApplication;
 import com.kiss.MainActivity;
 import com.kiss.adapter.RecordAdapter;
 import com.kiss.normalizer.StringNormalizer;
 import com.kiss.searcher.QueryInterface;
 
-import fr.neamar.kiss.BuildConfig;
-import fr.neamar.kiss.R;
 import com.kiss.UIColors;
 import com.kiss.db.DBHelper;
 import com.kiss.pojo.AppPojo;
@@ -77,7 +77,7 @@ public abstract class Result {
         else if (pojo instanceof ShortcutPojo)
             return new ShortcutsResult((ShortcutPojo) pojo);
         else if (pojo instanceof TagDummyPojo)
-            return new TagDummyResult((TagDummyPojo)pojo);
+            return new TagDummyResult((TagDummyPojo) pojo);
 
         throw new UnsupportedOperationException("Unable to create a result from POJO");
     }
@@ -344,6 +344,7 @@ public abstract class Result {
     /**
      * Does the drawable changes regularly?
      * If so, it can't be kept in cache for long.
+     *
      * @return true when dynamic
      */
     public boolean isDrawableDynamic() {

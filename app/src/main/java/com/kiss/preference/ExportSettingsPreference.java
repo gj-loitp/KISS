@@ -18,8 +18,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import com.R;
 import com.kiss.KissApplication;
-import fr.neamar.kiss.R;
 
 import static android.content.Context.CLIPBOARD_SERVICE;
 

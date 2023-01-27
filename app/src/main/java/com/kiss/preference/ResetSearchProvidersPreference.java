@@ -7,9 +7,8 @@ import android.preference.PreferenceManager;
 import android.util.AttributeSet;
 import android.widget.Toast;
 
+import com.R;
 import com.kiss.KissApplication;
-
-import fr.neamar.kiss.R;
 
 public class ResetSearchProvidersPreference extends DialogPreference {
 

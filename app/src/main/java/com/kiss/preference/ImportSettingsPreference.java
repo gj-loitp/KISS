@@ -18,10 +18,10 @@ import org.json.JSONObject;
 import java.util.HashSet;
 import java.util.Iterator;
 
-import fr.neamar.kiss.BuildConfig;
+import com.BuildConfig;
+import com.R;
 import com.kiss.DataHandler;
 import com.kiss.KissApplication;
-import fr.neamar.kiss.R;
 import com.kiss.TagsHandler;
 
 public class ImportSettingsPreference extends DialogPreference {
@@ -89,7 +89,7 @@ public class ImportSettingsPreference extends DialogPreference {
                 }
 
                 Toast.makeText(getContext(), "Preferences imported!", Toast.LENGTH_SHORT).show();
-            } catch (JSONException|NullPointerException e) {
+            } catch (JSONException | NullPointerException e) {
                 e.printStackTrace();
                 Toast.makeText(getContext(), "Unable to import preferences", Toast.LENGTH_SHORT).show();
             }

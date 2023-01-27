@@ -26,6 +26,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
 
+import com.R;
 import com.kiss.forwarder.InterfaceTweaks;
 import com.kiss.utils.UserHandle;
 import com.kiss.utils.Utilities;
@@ -34,8 +35,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
-import fr.neamar.kiss.R;
 
 public class PickAppWidgetActivity extends Activity {
     private static final String TAG = "PickAppWidget";
